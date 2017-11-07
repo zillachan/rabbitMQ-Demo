@@ -1,0 +1,8 @@
+apply plugin: 'java'
+apply from: '../common.gradle'
+dependencies {
+    compile project(':common')
+    compile 'org.springframework.boot:spring-boot-starter-web:' + SPRING_BOOT_VERSION
+    compile 'com.squareup.retrofit2:retrofit:' + RETROFIT_VERSION
+    compile 'com.squareup.retrofit2:converter-gson:' + RETROFIT_VERSION
+}

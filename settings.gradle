@@ -1,0 +1,14 @@
+rootProject.name = 'pub-zilla-mq'
+include 'consumer' ,'producer' ,'api' ,'common'
+include 'dispatcher'
+include 'client'
+
+include 'SpringAMQP:spring_amqp_client'
+findProject(':SpringAMQP:spring_amqp_client')?.name = 'spring_amqp_client'
+
+include 'SpringAMQP:spring_amqp_client2'
+findProject(':SpringAMQP:spring_amqp_client2')?.name = 'spring_amqp_client2'
+
+include 'SpringAMQP:spring_amqp_producer'
+findProject(':SpringAMQP:spring_amqp_producer')?.name = 'spring_amqp_producer'
+

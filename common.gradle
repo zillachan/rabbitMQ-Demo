@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+dependencies {
+    compile 'com.rabbitmq:amqp-client:' + AMQP_VERSION
+    compile 'org.slf4j:slf4j-api:' + SLF4J_VERSION
+    compile 'ch.qos.logback:logback-classic:' + LOGBACK_VERSION
+    compile 'org.springframework.boot:spring-boot:'+SPRING_BOOT_VERSION
+//    compile 'org.springframework.boot:spring-boot-starter-data-jpa:' + SPRING_BOOT_VERSION
+
+    compile 'com.google.code.gson:gson:' + GSON_VERSION
+//    compile 'org.springframework.boot:spring-boot-starter-web:' + SPRING_BOOT_VERSION
+//    compile 'org.springframework.boot:spring-boot-starter-actuator:' + SPRING_BOOT_VERSION //启动Actuator，如果需要使用http形式，需要依赖web
+    testCompile 'junit:junit:' + JUNIT_VERSION
+    testCompile("org.springframework.boot:spring-boot-starter-test:" + SPRING_BOOT_VERSION)
+
+
+    compile 'org.projectlombok:lombok:1.16.18'
+}

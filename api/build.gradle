@@ -1,0 +1,5 @@
+apply from: '../common.gradle'
+dependencies {
+    compile project(':common')
+    compile 'org.springframework.boot:spring-boot-starter-web:' + SPRING_BOOT_VERSION
+}

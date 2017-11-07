@@ -1,0 +1,7 @@
+apply plugin: 'java'
+apply from: '../common.gradle'
+dependencies{
+    compile project(':common')
+    compile 'mysql:mysql-connector-java:' + MYSQL_VERSION
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa:' + SPRING_BOOT_VERSION
+}

@@ -1,0 +1,12 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter-amqp:' + SPRING_BOOT_VERSION
+    compile 'org.springframework.amqp:spring-rabbit:' + SPRING_AMQP_VERSION
+    compile 'org.projectlombok:lombok:1.16.18'
+    compile 'com.google.code.gson:gson:' + GSON_VERSION
+    testCompile 'junit:junit:' + JUNIT_VERSION
+    testCompile("org.springframework.boot:spring-boot-starter-test:" + SPRING_BOOT_VERSION)
+}
